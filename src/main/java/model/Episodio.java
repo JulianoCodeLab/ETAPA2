@@ -2,6 +2,10 @@ package model;
 
 import jakarta.persistence.Entity;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeParseException;
+import java.
+
 @Table(name = "episodios")
 
 
