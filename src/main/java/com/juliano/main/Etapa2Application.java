@@ -14,11 +14,11 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 
 @SpringBootApplication
-@EnableJpaRepositories(basePackages = "com.juliano.dao")
+@EnableJpaRepositories(basePackages = {"com.juliano.dao", "com.juliano.reppository"}) //incluindo ambos os pacotes (repository e DAO)
 @EntityScan(basePackages = "com.juliano.model")
 public class Etapa2Application {
-    @Autowired
-    private SerieDao repositorio;
+    //@Autowired
+   // private SerieDao repositorio;
     public static void main(String[] args) {
         SpringApplication.run(Etapa2Application.class, args);
     }

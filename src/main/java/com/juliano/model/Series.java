@@ -5,6 +5,8 @@ import jakarta.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.OptionalDouble;
+
+
 @Entity
 @Table(name = "series")
 public class Series {

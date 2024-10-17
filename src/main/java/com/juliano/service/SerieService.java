@@ -4,10 +4,13 @@ import com.juliano.SerieDto;
 import com.juliano.reppository.SerieRepository;
 import com.juliano.model.Series;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service; // importando anotação do service
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+
+@Service // add anotação do service
 public class SerieService {
 
     @Autowired
