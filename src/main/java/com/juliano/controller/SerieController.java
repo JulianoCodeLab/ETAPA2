@@ -15,7 +15,6 @@ import java.util.List;
 @RequestMapping("/series") // pra não repetir /series em todos os @GetMapping
 public class SerieController {
 
-
     @Autowired
     private SerieService servico;
 
@@ -33,5 +32,6 @@ public class SerieController {
     public List<SerieDto> obterLancamentos() {
         return servico.obterLancamentos();
     }
+
 
 }

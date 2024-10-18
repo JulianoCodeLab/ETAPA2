@@ -1,4 +1,4 @@
-package com.juliano.reppository;
+package com.juliano.repository;
 
 import com.juliano.model.Categoria;
 import com.juliano.model.Episodio;
@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 public interface SerieRepository extends JpaRepository<Series, Long> {
+
     Optional<Series> findByTituloContainingIgnoreCase(String nomeSerie);
 
     //List<Serie> findByAtoresContainingIgnoreCaseAndGenero(String nomeAtor,Categoria categoria);
@@ -40,5 +41,4 @@ public interface SerieRepository extends JpaRepository<Series, Long> {
 
     List<Series> findTop5ByOrderByEpisodiosDataLancamentoDesc();
 
-    List<Series> findAll();
 }

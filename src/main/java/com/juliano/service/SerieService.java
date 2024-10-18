@@ -1,7 +1,7 @@
 package com.juliano.service;
 
 import com.juliano.SerieDto;
-import com.juliano.reppository.SerieRepository;
+import com.juliano.repository.SerieRepository;
 import com.juliano.model.Series;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service; // importando anotação do service
@@ -12,6 +12,7 @@ import java.util.stream.Collectors;
 
 @Service // add anotação do service
 public class SerieService {
+
 
     @Autowired
     private SerieRepository repositorio;
@@ -34,4 +35,5 @@ public class SerieService {
     public List<SerieDto> obterLancamentos() {
         return converteDados(repositorio.findTop5ByOrderByEpisodiosDataLancamentoDesc());
     }
+
 }
