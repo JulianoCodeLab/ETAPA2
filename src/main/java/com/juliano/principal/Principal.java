@@ -1,11 +1,11 @@
 package com.juliano.principal;
 
-import com.juliano.dao.SerieDao;
 import com.juliano.model.Categoria;
 import com.juliano.model.DadosSerie;
 import com.juliano.model.DadosTemporada;
 import com.juliano.model.Episodio;
 import com.juliano.model.Series;
+import com.juliano.repository.SerieRepository;
 import com.juliano.service.ConsumoAPI;
 import com.juliano.service.ConverteDados;
 import java.util.ArrayList;
@@ -16,6 +16,7 @@ import java.util.Scanner;
 import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 /**
  *
@@ -29,12 +30,12 @@ public class Principal {
     private final String ENDERECO = "https://www.omdbapi.com/?t=";
     private final String API_KEY = "&apikey=6585022c";
     private List<DadosSerie> dadosSeries = new ArrayList<>();
-    private final SerieDao repositorio;
+    private final SerieRepository repositorio;
     private List<Series> series = new ArrayList<>();
     private Optional<Series> serieBusca;
 
     @Autowired
-    public Principal(SerieDao repositorio) {
+    public Principal(SerieRepository repositorio) {
         this.repositorio = repositorio;
     }
 

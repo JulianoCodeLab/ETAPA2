@@ -1,4 +1,4 @@
-package com.juliano.main;
+package com.juliano;
 
 /*
 import com.juliano.dao.SerieDao;

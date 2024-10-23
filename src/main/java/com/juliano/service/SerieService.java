@@ -1,6 +1,6 @@
 package com.juliano.service;
 
-import com.juliano.SerieDto;
+import com.juliano.dto.SerieDto;
 import com.juliano.repository.SerieRepository;
 import com.juliano.model.Series;
 import org.springframework.beans.factory.annotation.Autowired;

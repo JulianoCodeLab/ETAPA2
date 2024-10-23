@@ -1,4 +1,4 @@
-package com.juliano;
+package com.juliano.dto;
 
 import com.juliano.model.Categoria;
 

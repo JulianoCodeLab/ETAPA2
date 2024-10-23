@@ -1,7 +1,7 @@
 package com.juliano.controller;
 
 
-import com.juliano.SerieDto;
+import com.juliano.dto.SerieDto;
 import com.juliano.service.SerieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
